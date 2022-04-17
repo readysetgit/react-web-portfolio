@@ -1,0 +1,44 @@
+.nav {
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    max-width: 200px;
+}
+
+.nav-ul li {
+    flex: 1;
+}
+
+li a {
+    text-decoration: none !important;
+    color: #7a8288;
+    padding: 5px 10px 5px 10px;
+}
+
+li a:hover {
+     font-weight: bold !important;
+     /* text-decoration: underline !important; */
+    /* cursor: pointer;
+    background-color: grey;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s; */
+}
+
+a.active {
+    /* font-weight: bold !important; */
+
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s;
+}
