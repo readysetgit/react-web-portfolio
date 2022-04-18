@@ -27,6 +27,20 @@ function App() {
               />
             }
           />
+          <Route
+            path="*"
+            element={
+              <Home
+                title={HomePageData.title}
+                description={HomePageData.bodyText}
+                name={HomePageData.name}
+                profilePic={HomePageData.profilePic}
+                company={HomePageData.company}
+                position={HomePageData.position}
+                socials={HomePageData.socials}
+              />
+            }
+          />
         </Routes>
       </Router>
     </React.Fragment>
