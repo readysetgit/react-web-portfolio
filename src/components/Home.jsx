@@ -20,15 +20,21 @@ function Home(props) {
             </div>
             <div className="socials mtl mbxl">
               <ul>
-                {props.socials.map(s => {
-                  return(<li className="flex-row mbm">
-                    <span style={{maxWidth:'30', maxHeight:'30'}}>
-                      <img style={{borderRadius:50, maxWidth:30}} src={s.icon} alt={s.name + "icon"}></img>
-                    </span>
-                    <span>
-                      <a href={s.url}>{s.name}</a>
-                    </span>
-                  </li>)
+                {props.socials.map((s) => {
+                  return (
+                    <li className="flex-row mbm">
+                      <span style={{ maxWidth: "30", maxHeight: "30" }}>
+                        <img
+                          style={{ borderRadius: 50, maxWidth: 30 }}
+                          src={s.icon}
+                          alt={s.name + "icon"}
+                        ></img>
+                      </span>
+                      <span>
+                        <a href={s.url}>{s.name}</a>
+                      </span>
+                    </li>
+                  );
                 })}
               </ul>
             </div>

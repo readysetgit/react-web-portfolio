@@ -20,7 +20,9 @@ class ProjectCell extends Component {
             {this.props.technologies && (
               <h4 className="technology-txt">
                 <span>Technologies: </span>
-                <span className="grey">{this.props.technologies.join(", ")}</span>
+                <span className="grey">
+                  {this.props.technologies.join(", ")}
+                </span>
               </h4>
             )}
           </div>
